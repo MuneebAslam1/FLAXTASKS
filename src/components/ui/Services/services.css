@@ -1,0 +1,35 @@
+
+
+
+.cta{
+    /* color: rgb(14, 14, 14) ; */
+    padding: 4% 20px;
+    background-color:  var(--backgroung-color);
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
+.ctaa{
+    color: white ;
+    padding: 4% 20px;
+    background-color: #2C51CD;
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
+.text-centerr{text-align: center;}
+
+@media screen and (max-width: 786px) {
+    .cards{
+      flex-direction: column;
+      align-items: center;
+    }
+    .talent{flex-direction: column; gap: 25px;}
+    .heading{margin-top: 50px;}
+    .key-services{margin-top: 70px;}
+    .points{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .text-centerr{text-align: left; margin-top: 29px;}
+    .left-side{width: 90%;}
+    .right-side{width: 80%;}
+   }

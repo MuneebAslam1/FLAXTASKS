@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.lucide.lucide-link {
+  display: flex;
+  flex-direction: row;
+}
+
+
+:root {
+  --colorprimary: black;
+  --colorsecondary: white;
+  /* --brandcolor: rgb(29, 172, 0); */
+  --brandcolor:#2C51CD;
+
+  --fs: "Poppins", serif;
+  --h1: bold 46px/62px var(--fs);
+  --h2: bold 36px/36px var(--fs);
+  --h3: bold 24px/30px var(--fs);
+  --link: bold 18px/18px var(--fs);
+  --p: 18px/30px var(--fs);
+  --subtext: 14px/20px var(--fs);
+  --transition: 0.3s ease-in-out;
+}
+.sub-heading{
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 500;  
+}
+
+
+
+.lowweight{
+  font: var(--fs);
+  font-size: 36px;
+  font-weight: 600;
+}
+html{scroll-behavior: smooth;}
+.formFooter .f6 .branding21{display: none !important;} 
+.formFooter{display: none !important;}
+
+.formFooter-wrapper{display: none;}
+
+body{ font-family: var(--fs); 
+cursor: none;}
+.blueColor{ color: var(--brandcolor) }
+.section{ margin: 80px 30px 0px 30px ;
+}
+
+
+
+
+p::selection{
+  color: white;
+  background-color: var(--brandcolor);
+}
+.bg-custom{ background-color: var(--background);}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+/* .marquee img {
+  height: 70px;
+  margin: 0 50px;
+} */
+
+
+
+@layer base {
+  :root {
+    /* --background: white; */
+    --background: 213 92% 95%;
+    --cardcolor: #F4F8FD;
+    --grey:  rgb(66, 64, 60);
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.75rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    /* color: black; */
+    --background: 222.2 84% 4.9%;
+    --cardcolor: 222.2 84% 4.9%;
+    --grey:  rgb(206, 204, 200);
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+
+
+.formFooter {
+  display: none;
+}

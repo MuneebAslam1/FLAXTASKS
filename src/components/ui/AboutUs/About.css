@@ -1,0 +1,145 @@
+.agenda {
+  margin-top: 5%;
+  margin-bottom: 2% ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+    padding: 20px;
+    /* background-color: #f4f4f4; */
+  }
+  
+  .leftside {
+    font-size: 18px;
+    width: 50%;
+  }
+.agenda-img{
+    width: 100%; 
+    max-width: 350px;
+    height: auto; 
+  }
+  .text{
+    padding-top: 35px;
+        /* padding: 25px 25px 0px 25px; */
+  }
+  
+  .our-team{
+    padding-top: 35px;
+    text-align: center;
+  }
+
+  .meambers{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    /* gap: 25px; */
+    /* padding: 20px; */
+  }
+.transforms{
+  display: flex;
+  margin-top: 9% ;
+  margin-bottom: 9%;
+  padding: 30px ;
+  background-color: var(--cardcolor);
+  border-radius: 15px;
+}
+
+
+.cta{
+
+display: flex;
+flex-direction: column;
+/* align-items: center; */
+justify-content: center;
+gap: 30px;
+}
+.ctaa{
+
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 30px;
+  }
+.grey{color: var(--grey)}
+
+.text-sec{
+  width: 65%;
+}
+
+
+
+
+
+  @media screen and (max-width: 768px) {
+    .agenda {
+      flex-direction: column;
+    }
+    .leftside {
+      width: 100%;
+    }
+    .agenda-img{
+      width: 100%; 
+      max-width: 250px;
+      height: auto; 
+    }
+    .meambers{
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+    .transforms{
+      flex-direction: column;
+      gap: 30px;
+    }
+    .cta{text-align: center;}
+    .text-sec{width: 100%;} 
+  }
+
+
+
+
+  .herosection2{
+    margin: 5% 30px 150px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+
+.txt{width: 60%;}
+
+@media (max-width: 741px) {
+
+.herosection2{
+    margin: 10% 30px 0px 30px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.txt{width: 90%;}
+
+
+
+@media (min-width: 941px) and (max-width: 1024px){
+
+.imagess image{
+max-width: 784px;
+max-height: 764px;
+}
+}
+
+@media (min-width: 741px) and (max-width: 940px){
+
+
+}
+
+
+}
+
+
+
